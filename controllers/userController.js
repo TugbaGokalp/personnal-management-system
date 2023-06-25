@@ -37,7 +37,7 @@ const loginUser = async (req, res) => {
    if (same) {
     res.status(200).json({
       user,
-      token: createToken(user._id),
+      token:createToken(user._id),
     })
     
    }else{
